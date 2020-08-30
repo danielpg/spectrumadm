@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns   = "http://www.w3.org/ns/widgets"
+		xmlns:gap   = "http://phonegap.com/ns/1.0"
+		id          = "com.spectrum.adm
+		versionCode = "1" 
+		version     = "1.0.1" >
+
+	<!-- versionCode is optional and Android onlyxzccc -->
+
+	<name>Arduphone</name>
+
+	<description>		Arduphone	</description>
+
+	<!-- preference name="phonegap-version" value="cli-9.0.0" / -->
+	<preference name="orientation" value="portrait" />
+	<preference name="fullscreen" value="false" />
+	<preference name="SplashScreen" value="splash" />
+	<splash src="splash.png" />
+
+	<platform name="android" />
+
+	<!-- preference name="android-targetSdkVersion" value="28" / -->
+	
+	<gap:plugin name="cordova-plugin-bluetooth-serial" source="npm"  />
+	<!--gap:splash src="splash.png" / -->
+	<icon src="icon.png" />
+
+	<plugin name="cordova-plugin-whitelist"      source="npm" spec="1.1.0" />
+	<allow-navigation href="*" />
+	<allow-intent href="*" />
+	<access origin="*" /> 
+
+</widget>
